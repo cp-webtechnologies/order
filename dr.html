@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St Cyprian Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+/* Main Styles */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    margin: 20px;
+    width: calc(33.33% - 40px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item h2 {
+    margin-top: 10px;
+}
+
+/* Appetizers Styles */
+
+#appetizers {
+    background-color: #f7f7f7;
+}
+
+#appetizers .menu-item {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Entrees Styles */
+
+#entrees {
+    background-color: #fff;
+}
+
+#entrees .menu-item {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Sides Styles */
+
+#sides {
+    background-color: #f7f7f7;
+}
+
+#sides .menu-item {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Desserts Styles */
+
+#desserts {
+    background-color: #fff;
+}
+
+#desserts .menu-item {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.menu-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.menu-item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Drinks Styles */
+
+#drinks {
+    background-color: #f7f7f7;
+}
+
+#drinks .menu-item {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin-right: 20px;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+footer .fab, footer .fas {
+    font-size: 24px;
+    margin-right: 10px;
+}
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin-right: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.social-media a:hover {
+    color: #ccc;
+}
+
+/* Add some colorful icons */
+
+.social-media a:nth-child(1) {
+    color: #25D366; /* WhatsApp green */
+}
+
+.social-media a:nth-child(2) {
+    color: #007bff; /* Phone blue */
+}
+
+.social-media a:nth-child(3) {
+    color: #E1306C; /* Instagram pink */
+}
+
+.social-media a:nth-child(4) {
+    color: #FFC107; /* Email yellow */
+}
+
+.social-media a:nth-child(5) {
+    color: #69C9FF; /* TikTok blue */
+}
+
+
+
+
+        </style>
+        <nav>
+            <ul>          
+                <li><a href="index.html"><i class="fas fa-bread-slice"></i>home</a></li>
+                <li><a href="t.html"><i class="fas fa-ice-cream"></i> Terms</a></li>
+                <li><a href="dr.html"><i class="fas fa-coffee"></i> Drinks</a></li>
+                <li><a href="me.html"><i class="fas fa-book"></i> MEnu</a></li>
+                <li><a href="a.html"><i class="fas fa-ice-cream"></i> About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="appetizers">
+            <h1>Milkshakes <i class="fas fa-utensils"></i></h1>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="Screenshot_20250402-072145~2.png" alt="Appetizer 1">
+                    <h2>Oreo Milkshake <i class="fas fa-drumstick-bite"></i></h2>
+                    <p>Price: UGX 18000</p>
+                   <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="Screenshot_20250402-072228.png" alt="Appetizer 2">
+                    <h2> Caramel Milkshake <i class="fas fa-squid"></i></h2>
+                    <p>Price: UGX 17000</p>
+                     <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="Screenshot_20250402-072208.png" alt="Appetizer 2">
+                    <h2> Oreo Milkshake <i class="fas fa-squid"></i></h2>
+                    <p>Price: UGX 19000</p>
+                    <p>All Chicken items are served with rice or chips</p>
+                    <a href="tel:+256775640199"> <button class="order-btn">Order Now</button></a>
+                </div>
+               <div class="menu-item">
+                    <img src="Screenshot_20250402-072145.png" alt="Appetizer 2">
+                    <h2> Vanilla Milkshake <i class="fas fa-squid"></i></h2>
+                    <p>Price: UGX 16000 </p>
+                    <p>All Chicken items are served with rice or chips</p>
+                     <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <!-- More appetizers here -->
+            </div>
+        </section>
+        <section id="entrees">
+            <h1>Smoothies <i class="fas fa-glass"></i></h1>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="Screenshot_20250402-072125~2.png" alt="Entree 1">
+                    <h2>Strawberry <i class="fas fa-smooth"></i></h2>
+                    <p>Price: UGx 21000</p>
+                    <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                      </div>
+                     <div class="menu-item">
+                    <img src="Screenshot_20250402-072125~2.png" alt="Entree 2">
+                    <h2>pina colada smoothie <i class="fas fa-cuttlefish"></i></h2>
+                    <p>Price: UGX 20000</p>
+                     <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                 
+
+                <div class="menu-item">
+                    <img src="Screenshot_20250402-072125~2.png" alt="Appetizer 2">
+                    <h2> mango smoothie<i class="fas fa-squid"></i></h2>
+                    <p>Price: UGX 21000</p>
+                    <p> </p>
+                    <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+
+              
+                <div class="menu-item">
+                    <img src="Screenshot_20250402-072125~2.png" alt="Entree 2">
+                    <h2> ket smoothie<i class="fas fa-cuttlefish"></i></h2>
+                    <p>Price: UGX 19000</p>
+                    <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="Screenshot_20250402-072125~2.png" alt="Entree 2">
+                    <h2> shu smoothie <i class="fas fa-cuttlefish"></i></h2>
+                    <p>Price: UGX 18000</p>
+                    <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="Screenshot_20250402-072125~2.png" alt="Entree 2">
+                    <h2>our crush <i class="fas fa-cuttlefish"></i></h2>
+                    <p>Price: UGX 20000</p>
+                     <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <!-- More entrees here -->
+            </div>
+        </section>
+        <section id="sides">
+            <h1>fa-coffee<i class="fas fa-coffee"></i></h1>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="1 (1).jpeg" alt="Side 1">
+                    <h2>Cappcino Double <i class="fas fa-potato"></i></h2>
+                    <p>Price: UGx 16000</p>
+                    <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="1 (1).jpeg" alt="Side 2">
+                    <h2>light Cappccino <i class="fas fa-carrot"></i></h2>
+                    <p>Price: Ugx1400o</p>
+                     <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="1 (1).jpeg" alt="Side 1">
+                    <h2>classic coffee <i class="fas fa-potato"></i></h2>
+                    <p>Price: UGx 18000</p>
+                     <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="1 (6).jpeg" alt="Side 2">
+                    <h2>  <i class="fas fa-carrot"></i></h2>
+                    <p>Price: Ugx 1900</p>
+                     <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <!-- More sides here -->
+            </div>
+        </section>
+        <section id="desserts">
+            <h1>Cocktails<i class="fas fa-ice-juice"></i></h1>
+            <div class="menu-container">
+                <div class="menu-item">
+                    <img src="12.jpeg" alt="Dessert 1">
+                    <h2> lets cheer <i class="fas fa-cake"></i></h2>
+                    <p>Price: Ugx 16000</p>
+                    <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="7(10).jpeg" alt="Dessert 2">
+                    <h2> sunny</h2> 
+                    <p>Price: Ugx 22000</p>
+                    <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="8.jpeg" alt="Dessert 2">
+                    <h2>blue shore</h2>
+                    <p>Price: Ugx 25000</p>
+                     <a href="tel:+256775640199"><button class="order-btn">Order Now</button></a>
+                </div>
+            </div>
+        </section>
+    </section>
+   
+        </section>
+    </main>
+    
+<footer>
+    <p>&copy; 2023 St Cyprian Restaurant</p>
+    <div class="social-media">
+        <a href="https://wa.me/+256775640199" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+256707208788" target="_blank"><i class="fas fa-phone"></i></a>
+        <a href="cp" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:Cpwebtechnologies@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="cynics" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <p>Designed by Cp Web Technologies </p>
+</footer>
+</body>
+</html>
